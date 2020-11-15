@@ -24,6 +24,9 @@ flutter:
     - assets/images/arrow_down.svg
     - assets/images/ico_alarm.svg
     - assets/images/dark.svg
+    - assets/images/banner/main_banner_01@3x.jpg
+    - assets/images/banner/main_banner_02@3x.jpg
+    - assets/images/banner/main_banner_03@3x.jpg
   fonts:
 
     - family: BMHANNA
