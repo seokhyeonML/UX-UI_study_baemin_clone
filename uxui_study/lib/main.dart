@@ -121,6 +121,7 @@ class _MyHomePageState extends State<MyHomePage>
       labelColor: Theme.of(context).accentColor,
       unselectedLabelColor: Colors.black  ,
       indicatorWeight: 5,
+      isScrollable: false,
     );
   }
 }
