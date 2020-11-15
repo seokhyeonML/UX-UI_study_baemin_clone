@@ -58,8 +58,8 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
         ),
         body: TabBarView(
           children: [
-            delivery(),
-            takeout()
+            Delivery(),
+            Takeout()
           ],
         )
       ),

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class takeout extends StatefulWidget {
+class Takeout extends StatefulWidget {
   @override
-  _takeoutState createState() => _takeoutState();
+  _TakeoutState createState() => _TakeoutState();
 }
 
-class _takeoutState extends State<takeout> {
+class _TakeoutState extends State<Takeout> {
   @override
   Widget build(BuildContext context) {
     return Container(

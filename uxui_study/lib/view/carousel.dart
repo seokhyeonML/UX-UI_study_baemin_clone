@@ -1,12 +1,12 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-class carousel extends StatefulWidget {
+class Carousel extends StatefulWidget {
   @override
-  _carouselState createState() => _carouselState();
+  _CarouselState createState() => _CarouselState();
 }
 
-class _carouselState extends State<carousel> {
+class _CarouselState extends State<Carousel> {
   CarouselController _controller = CarouselController();
   int pagenum = 0;
 
