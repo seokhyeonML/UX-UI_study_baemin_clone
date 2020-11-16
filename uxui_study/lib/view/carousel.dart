@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Carousel extends StatefulWidget {
@@ -38,14 +39,14 @@ class CarouselState extends State<Carousel> {
                 children: [
                   Text((pageNum+1).toString(),
                     style: GoogleFonts.notoSans(
-                      fontSize: 7.75,
+                      fontSize: 10,
                       color: Color(0xFFFFFFFF),
                       fontWeight: FontWeight.bold
                     ),
                   ),
                   Text(" / 3",
                     style: GoogleFonts.notoSans(
-                        fontSize: 7.75,
+                        fontSize: 10,
                         color: Color(0xFFFFFFFF)
                     ),
                   ),
@@ -65,11 +66,16 @@ class CarouselState extends State<Carousel> {
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text("모두 보기", style: GoogleFonts.notoSans(
-                    fontSize: 8.25,
-                  ),),
-                  Icon(Icons.arrow_forward_ios_sharp, size: 16,),
+                    fontSize: 11,
+                  ),textAlign: TextAlign.right,),
+                  SvgPicture.asset(
+                    'assets/images/icon_arrow_right.svg',
+                    height: 16,
+                    width: 16,
+                  ),
                 ],
               )
             ),

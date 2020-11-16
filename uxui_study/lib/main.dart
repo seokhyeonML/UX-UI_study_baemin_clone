@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Color(0xFFFFFFFF),
         accentColor: Color(0xFF29C1BC),
+        focusColor: Color(0xFF000001),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
@@ -70,8 +71,8 @@ class _MyHomePageState extends State<MyHomePage>
                         textAlign: TextAlign.center,
                         overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.notoSans(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 11.25)),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 15)),
                   ),
                 ),
                 SvgPicture.asset(
@@ -101,11 +102,6 @@ class _MyHomePageState extends State<MyHomePage>
           height: 34,
           child: Tab(
               child: Text("배달",
-                  style: GoogleFonts.notoSans(
-                      fontSize: 11.25,
-                      fontWeight: FontWeight.bold
-                  )
-
               )
           )
       ),
@@ -113,14 +109,15 @@ class _MyHomePageState extends State<MyHomePage>
           height: 34,
           child: Tab(
               child: Text("포장/방문",
-                  style: GoogleFonts.notoSans(fontSize: 11.25,fontWeight: FontWeight.bold)
               )
           )
       )
     ],
-      labelColor: Theme.of(context).accentColor,
-      unselectedLabelColor: Colors.black  ,
-      indicatorWeight: 5,
+      labelStyle: GoogleFonts.notoSans(fontSize: 15,fontWeight: FontWeight.bold, ),
+      labelColor:Theme.of(context).accentColor,
+      unselectedLabelStyle: GoogleFonts.notoSans(fontSize: 15,fontWeight: FontWeight.w500,),
+      unselectedLabelColor:Theme.of(context).focusColor,
+      indicatorWeight: 5.0,
       isScrollable: false,
     );
   }

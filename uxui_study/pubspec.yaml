@@ -27,6 +27,7 @@ flutter:
     - assets/images/banner/main_banner_01@3x.jpg
     - assets/images/banner/main_banner_02@3x.jpg
     - assets/images/banner/main_banner_03@3x.jpg
+    - assets/images/icon_arrow_right.svg
   fonts:
 
     - family: BMHANNA
