@@ -21,15 +21,43 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/arrow_down.svg
-    - assets/images/ico_alarm.svg
-    - assets/images/dark.svg
-    - assets/images/banner/main_banner_01@3x.jpg
-    - assets/images/banner/main_banner_02@3x.jpg
-    - assets/images/banner/main_banner_03@3x.jpg
-    - assets/images/icon_arrow_right.svg
-  fonts:
+    # light icons
+    - assets/images/icons/light/arrow_down.svg
+    - assets/images/icons/light/ico_alarm.svg
+    - assets/images/icons/light/mode.svg
+    - assets/images/icons/light/search.svg
+    - assets/images/icons/light/heart.svg
 
+    # dark icons
+    - assets/images/icons/dark/arrow_down.svg
+    - assets/images/icons/dark/ico_alarm.svg
+    - assets/images/icons/dark/mode.svg
+    - assets/images/icons/dark/search.svg
+    - assets/images/icons/dark/heart.svg
+    - assets/images/icons/dark/search.png #due to svg file problem, replace svg icon to png icon
+
+    # light category
+    - assets/images/background/menu_category_light.png
+
+    # dark category
+    - assets/images/background/menu_category_dark.png
+
+    # common icons
+    - assets/images/icons/icon_arrow_right.svg
+    - assets/images/icons/burger.svg
+    - assets/images/icons/chicken-leg.svg
+    - assets/images/icons/coffee.svg
+    - assets/images/icons/noodles.svg
+    - assets/images/icons/pizza.svg
+
+    # common banners
+    - assets/images/banner/main_banner_03@3x.jpg
+    - assets/images/banner/main_banner_02@3x.jpg
+    - assets/images/banner/main_banner_01@3x.jpg
+
+
+
+  fonts:
     - family: BMHANNA
       fonts:
         - asset: assets/fonts/BMHANNA_11yrs_ttf.ttf
