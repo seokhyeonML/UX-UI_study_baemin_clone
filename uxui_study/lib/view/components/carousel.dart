@@ -70,9 +70,10 @@ class CarouselState extends State<Carousel> {
                 children: [
                   Text("모두 보기", style: GoogleFonts.notoSans(
                     fontSize: 11,
+                    letterSpacing: -0.33
                   ),textAlign: TextAlign.right,),
                   SvgPicture.asset(
-                    'assets/images/icon_arrow_right.svg',
+                    'assets/images/icons/icon_arrow_right.svg',
                     height: 16,
                     width: 16,
                   ),
