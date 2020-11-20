@@ -51,6 +51,7 @@ flutter:
     - assets/images/icons/coffee.svg
     - assets/images/icons/noodles.svg
     - assets/images/icons/pizza.svg
+    - assets/images/icons/pizza.png #due to svg file problem, replace svg icon to png icon
 
     # common banners
     - assets/images/banner/main_banner_03@3x.jpg
