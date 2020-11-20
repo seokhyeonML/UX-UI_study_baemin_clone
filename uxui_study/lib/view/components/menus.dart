@@ -25,8 +25,14 @@ class _MenuState extends State<Menu> {
         children: [
           Container(
             margin: EdgeInsets.only(top:8, left:18, right:17, bottom: 2),
-            child: SvgPicture.asset(
+            child: iconName!="pizza"?
+            SvgPicture.asset(
               "assets/images/icons/"+iconName+".svg",
+              height: 48,
+              width: 48,
+            ):
+            Image.asset(
+              "assets/images/icons/"+iconName+".png",
               height: 48,
               width: 48,
             ),
