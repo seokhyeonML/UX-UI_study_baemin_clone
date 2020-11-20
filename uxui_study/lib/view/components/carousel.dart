@@ -22,8 +22,8 @@ class CarouselState extends State<Carousel> {
               viewportFraction: 1.0,
               enlargeCenterPage: false,
               autoPlay: true,
-              autoPlayInterval: Duration(seconds: 10),
-              autoPlayAnimationDuration: Duration(seconds: 1),
+              autoPlayInterval: Duration(seconds: 5),
+              autoPlayAnimationDuration: Duration(milliseconds: 700),
               onPageChanged: (index, reason){
                 setState(() {
                   pageNum = index;
