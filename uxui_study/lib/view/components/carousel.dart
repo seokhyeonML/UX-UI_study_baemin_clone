@@ -96,9 +96,10 @@ List<Widget> imageSlider(BuildContext context) {
   List<Widget> imageSliders = images
       .map((i) =>
         Container(
-          width: 360,
-          height: 180,
-          child: i,
+            child: FittedBox(
+              fit: BoxFit.fill,
+              child: i,
+          )
         )
       )
       .toList();

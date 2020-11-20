@@ -13,9 +13,10 @@ class _SearchBarState extends State<SearchBar> {
   Widget build(BuildContext context) {
     themeProvider provider = Provider.of<themeProvider>(context,listen:true);
     return Container(
+          alignment: Alignment.center,
           height: 40,
-          width: 332,
-          margin: EdgeInsets.only(bottom: 24),
+          width: MediaQuery.of(context).size.width-28,
+          margin: EdgeInsets.only(bottom: 24,left: 14,right: 14),
           decoration: BoxDecoration(
               color: Theme.of(context).primaryColor,
               border: Border.all(color:Theme.of(context).focusColor),

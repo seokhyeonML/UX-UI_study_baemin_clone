@@ -28,7 +28,7 @@ class _CategoryState extends State<Category> {
                     Container(
                         child: Image.asset(
                           "assets/images/background/menu_category_"+provider.theme+".png",
-                          height: 582,
+                          fit: BoxFit.fill
                         )
                     ),
               Column(
